@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.css">
+    <script src="owl.carousel.js"></script>
+    <script src="owl.carousel.min.js"></script>
+
+</head>
+
+<body>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- <div data-aos="fade-down" data-aos-duration="1500"> -->
+
+    <!-- <Header> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid d-flex" style="box-shadow: 1px 1px 3px 1px rgb(19, 15, 9);">
+
+            <a class="navbar-brand" href="#">
+                <b class="ms-5 text-warning">SANJU </b><b class="text-dark">SAINI</b>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mb-2 mb-lg-0 gap-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                    <h6>HOME</h6>
+                                </button>
+
+                                <div class="dropdown-content">
+                                    <a href="#">IMAGE</a>
+                                    <a href="#">VIDEO</a>
+                                    <a href="#">SLIDESHOW</a>
+                                    <a href="#">ONEPAGE IMAGE</a>
+                                    <a href="#">ONEPAGE VIDEO</a>
+                                    <a href="#">ONEPAGE SLIDESHOW</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                    <h6>PORTFOLIO </h6>
+                                </button>
+
+                                <div class="dropdown-content">
+                                    <a href="#">PORTFOLIO 1</a>
+                                    <a href="#">PORTFOLIO 2</a>
+                                    <a href="#">PORTFOLIO 3</a>
+                                    <a href="#">PORTFOLIO 4</a>
+                                    <a href="#">PORTFOLIO 5</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <button class="dropbtn btntop">
+                                <h6>RESUME </h6>
+                            </button>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <button class="dropbtn btntop">
+                                <h6>CONTACT </h6>
+                            </button>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <div class="dropdown">
+                                <button class="dropbtn ">
+                                    <h6>BLOG</h6>
+                                </button>
+
+                                <div class="dropdown-content">
+                                    <a href="#">BLOG 1</a>
+                                    <a href="#">BLOG 2</a>
+                                    <a href="#">PUBLICATION</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <button class="nevbtn " type="button" onclick="downloadCV()"><b><i>DOWNLOAD CV
+                                    </i></b></button>
+
+                            <script>
+                                function downloadCV() {
+                                    // Replace 'path/to/your/cv.pdf' with the actual path to your CV file
+                                    const cvUrl = 'cv sanju.pdf';
+                                    const link = document.createElement('a');
+                                    link.href = cvUrl;
+                                    link.download = 'file:///C:/Users/admin/Downloads/cv%20sanju.pdf'; // Specify the file name here
+                                    document.body.appendChild(link);
+                                    link.click();
+                                    document.body.removeChild(link);
+                                }
+                            </script>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <Header/> -->
+    <!-- </div> -->
+
+    <button onclick="downloadCV()">Download CV</button>
+
+
+    <!-- <main> -->
+
+    <!-- <section> -->
+    <div class="p-2">
+        <section id="bg-img">
+            <div class="container-fluid">
+                <div class="row mt-4">
+                    <div class="col-12 col-md-4 mt-5">
+
+                        <div class="card ms-5 carhigh mt-5 w-25 align-items-center position-fixed drad">
+                            <hr>
+                            <img class="cardimage" src="SANJU 1 IMG.jpeg" alt="">
+                            <hr>
+                            <b class="text-warning">SANJU <b class="text-dark">SAINI</b></b>
+                            <hr>
+                            <b class="typed">I'M FRONTEND DESIGNER</b>
+                            <div class="trm-divider trm-mb-40 trm-mt-40"></div>
+
+                            <div class="row hover g-5">
+                                <div class="col-md-2"></div>
+                                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2"> <i
+                                        class="bi bi-linkedin"></i>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2"> <i
+                                        class="bi bi-dribbble"></i>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2"> <i
+                                        class="bi bi-behance"></i>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2"><i
+                                        class="bi bi-twitter"></i>
+                                </div>
+                                <div class="col-md-2"></div>
+
+                            </div>
+                            <div class="trm-divider trm-mb-40 trm-mt-40"></div>
+
+                            <div class="col-12 col-md-8">
+                            </div>
+
+
+
+                            <div class="col-md-12">
+                                <div class="row font">
+                                    <div class=" col-md-2 "></div>
+                                    <div class=" col-md-4"><span>RESIDENCE :</span></div>
+                                    <div class=" col-md-2"></div>
+                                    <div class=" col-md-4">SANJU</div>
+                                    <div class=" col-md-2"></div>
+                                    <div class=" col-md-4 mt-3"><span>CITY :</span></div>
+                                    <div class=" col-md-2 "></div>
+                                    <div class=" col-md-4 mt-3">JAIPUR</div>
+                                    <div class=" col-md-2 "></div>
+                                    <div class=" col-md-4 mt-3"><span>AGE :</span></div>
+                                    <div class=" col-md-2  "></div>
+                                    <div class=" col-md-4 mt-3">20</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 text-white p-5 mt-5 ms-5">
+                        <span class=""><b>HI MY NEW FRIEND!</b></span>
+                        <h1 class="font mt-3" style="font-size: 60px;"><b>I AM FrontEnd </b><b
+                                class="text-warning">Developer</b></h1>
+                        <button class="btnfree"
+                            style="height: 35px; border: 1px solid currentColor; color: rgb(255, 255, 255); box-sizing: border-box; border-radius: 999px;margin-top: 50px;"
+                            type="button" class="btnfree w-50 mt-5 ms-4"><b>VIDEO RESUME <i
+                                    class="bi bi-play-fill"></i></b>
+                        </button>
+                    </div>
+                    <div class="col-12 col-md-2"></div>
+                </div>
+            </div>
+
+
+
+
+        </section>
+    </div>
+    <!-- </section> -->
+
+
+    <!-- <section> -->
+    <div class="container cardtop">
+        <div data-aos="fade-up" data-aos-duration="1500">
+            <div class="row">
+                <div class="col-12 col-md-4 "></div>
+                <div class="col-12 col-md-8 ">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="card text-center p-4">
+                                <h6> 74+</h6>
+                                <hr>
+                                <b> COMPLETED <br> PROJECTS</b>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-12 col-md-4">
+                            <div class="card text-center p-4">
+                                <h6> 50+</h6>
+                                <hr>
+                                <b> HAPPY <br> CUSTOMERS</b>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-12 col-md-4">
+                            <div class="card text-center p-4">
+                                <h6> 14+</h6>
+                                <hr>
+                                <b> HONORS AND <br>AWARDS</b>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </section> -->
+
+
+    <!-- <section> -->
+    <div class="container">
+        <div data-aos="fade-up" data-aos-duration="1500">
+            <div class="row">
+                <div class="col-12 col-md-4 "></div>
+                <div class="col-12 col-md-8 mt-3">
+                    <b> About</b>
+                    <hr class="border01">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </section> -->
+
+    <!-- <section> -->
+    <div class="container">
+        <div data-aos="fade-up" data-aos-duration="1500">
+            <div class="row">
+                <div class="col-12 col-md-4 "></div>
+                <div class="col-12 col-md-8 mt-3">
+                    <div class="card p-5">
+                        <b>I am <b class="text-warning"> SANJU,SAINI</b> a Developer FrontEnd residing in Khejroli, a
+                            village in the Jaipur district of Rajasthan. I completed my schooling in my village school
+                            and passed my 12th grade in 2020. Currently, I am studying in my B.A. 2nd year. Initially, I
+                            was interested in sports, but now I find technology more engaging. Because of this, I
+                            pursued a course in web development, where I learned two programming languages, react and
+                            JavaScript which are commonly used in FrontEnd. Developer I am working in an IT company in
+                            Jaipur. This is a summary of my profile as a talented FrontEnd developer who specializes in
+                            FrontEnd development.</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </section> -->
+
+        <!-- <section> -->
+        <div class="container">
+            <div data-aos="fade-up" data-aos-duration="1500">
+                <div class="row">
+                    <div class="col-12 col-md-4 "></div>
+                    <div class="col-12 col-md-8 mt-3">
+                        <b> Graphic Design</b>
+                        <hr class="border01">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </section> -->
+
+        <!-- <section> -->
+        <div class="container">
+            <div data-aos="fade-up" data-aos-duration="1500">
+                <div class="row">
+                    <div class="col-12 col-md-4 "></div>
+                    <div class="col-12 col-md-8 mt-3">
+                        <img src="https://media.istockphoto.com/id/1367939073/photo/businessman-using-tablet-and-laptop-analyzing-sales-data-and-economic-growth-graph-chart.jpg?s=612x612&w=0&k=20&c=SEELREH2KeXpqMCEMa2WHNrc4IsDQUvlvk8Upz_TtTg="
+                            alt="" width="100%" height="350px">
+                    </div>
+                </div>
+            </div>
+            <!-- </section> -->
+
+            <!-- <section> -->
+            <div class="container">
+                <div data-aos="fade-up" data-aos-duration="1500">
+                    <div class="row">
+                        <div class="col-12 col-md-4 "></div>
+                        <div class="col-12 col-md-8 mt-3">
+                            <b>My Services</b>
+                            <hr class="hr">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </section> -->
+
+        <!-- <section> -->
+        <div class="container">
+            <div data-aos="fade-up" data-aos-duration="1500">
+                <div class="row">
+                    <div class="col-12 col-md-4 "></div>
+                    <div class="col-12 col-md-4 mt-3">
+
+                        <div class="card p-4">
+                            <img src="https://trueman-react.vercel.app/img/icons/icon-1.svg" alt="" width="15%">
+                            <br>
+                            <b>Architecture</b>
+                            <br>
+                            <span>Dolor sit amet, consectetur adipisicing elit. Delectus esse commodi.</span>
+                            <br>
+                            <b class="text-warning">ORDER NOW </b>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mt-3">
+                        <div class="card p-4">
+                            <img src="https://trueman-react.vercel.app/img/icons/icon-2.svg" alt="" width="15%">
+                            <br>
+                            <b>UI/UX Design</b>
+                            <br>
+                            <span>Dolor sit amet, consectetur adipisicing elit. Delectus esse commodi.</span>
+                            <br>
+                            <b class="text-warning">ORDER NOW </b>
+                        </div>
+                    </div>
+                </div>
+                <!-- </section> -->
+
+                <!-- <section> -->
+                <div class="container">
+                    <div data-aos="fade-up" data-aos-duration="1500">
+                        <div class="row">
+                            <div class="col-12 col-md-4 "></div>
+                            <div class="col-12 col-md-4 mt-3">
+                                <div class="card p-4">
+                                    <img src="https://trueman-react.vercel.app/img/icons/icon-3.svg" alt="" width="15%">
+                                    <br>
+                                    <b>Interior Design</b>
+                                    <br>
+                                    <span>Dolor sit amet, consectetur adipisicing elit. Delectus esse commodi.</span>
+                                    <br>
+                                    <b class="text-warning">ORDER NOW </b>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mt-3">
+                                <div class="card p-4">
+                                    <img src="https://trueman-react.vercel.app/img/icons/icon-3.svg" alt="" width="15%">
+                                    <br>
+                                    <b>Game design</b>
+                                    <br>
+                                    <span>Dolor sit amet, consectetur adipisicing elit. Delectus esse commodi.</span>
+                                    <br>
+                                    <b class="text-warning">ORDER NOW </b>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </section> -->
+
+                        <!-- <section> -->
+                        <div class="container">
+                            <div data-aos="fade-up" data-aos-duration="1500">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 "></div>
+                                    <div class="col-12 col-md-8 mt-3">
+                                        <b> Price plans</b>
+                                        <hr class="border01">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </section> -->
+
+                        <!-- <section> -->
+                        <div class="container">
+                            <div data-aos="fade-up" data-aos-duration="1500">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 "></div>
+                                    <div class="col-12 col-md-4 mt-3">
+                                        <div class="card text-center p-4">
+                                            <b> Hourly Payment</b>
+                                            <br>
+                                            <b>$29h</b>
+                                            <p>AMET LOREM.</p>
+                                            <p>DOLOR IPSUM</p>
+                                            <p> SIT AMET</p>
+                                            <del> LOREM DOLOR</del>
+                                            <br>
+                                            <del>ORDER NOW</del>
+                                            <br>
+                                            <button class="rounded-3">ORDER
+                                                NOW</button>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-12 col-md-4 mt-3">
+                                        <div class="card text-center p-4">
+                                            <b> Hourly Payment</b>
+                                            <br>
+                                            <b>$29h</b>
+                                            <p>AMET LOREM.</p>
+                                            <p>DOLOR IPSUM</p>
+                                            <p> SIT AMET</p>
+                                            <del> LOREM DOLOR</del>
+                                            <br>
+                                            <del>ORDER NOW</del>
+                                            <br>
+                                            <button class="rounded-3">ORDER
+                                                NOW </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- </section> -->
+
+                                    <!-- <section> -->
+                                    <div class="container">
+                                        <div data-aos="fade-up" data-aos-duration="1500">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4 "></div>
+                                                <div class="col-12 col-md-8 mt-3">
+                                                    <b> Testimonials</b>
+                                                    <hr class="border01">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- </section> -->
+
+                                    <!-- <section> -->
+                                    <div class="container">
+                                        <div data-aos="fade-up" data-aos-duration="1500">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4 "></div>
+                                                <div class="col-12 col-md-8 mt-3">
+                                                    <div class="owl-carousel owl-theme">
+                                                        <div class="card text-center p-4 align-items-center">
+                                                            <img class=""
+                                                                style="border-radius: 50%; height: 100px;width: 100px;"
+                                                                src="SANJU 1 IMG.jpeg" alt="">
+                                                            <br>
+                                                            <b class='text-warning'>SANJU <b class="text-dark">SAINI</b>
+                                                            </b>
+                                                            <br>
+                                                            <b style="color: #afb42b;">Frontend Designer</b>
+                                                            <p>I am Sanju saini, a Frontend developer with a strong
+                                                                 passion for technology. My journey in this field began
+                                                                with a course in web development, where I learned react
+                                                                and JavaScript,node  I am known for my problem-solving skills
+                                                                and effective teamwork. I continually expand my
+                                                                knowledge and stay updated with the latest tech
+                                                                advancements. My disciplined approach, inspired by my
+                                                                past interest in sports, helps me excel in challenging
+                                                                environments. Beyond my professional life, I am
+                                                                dedicated to continuous learning and self-improvement.
+                                                                My goal is to advance my career in technology and make
+                                                                significant contributions to the field.</p>
+                                                        </div>
+                                                        <div class="card text-center p-4 align-items-center">
+                                                            <img class=""
+                                                                style="border-radius: 50%; height: 100px;width: 100px;"
+                                                                src="https://trueman-react.vercel.app/img/testimonials/2.jpg"
+                                                                alt="">
+                                                            <br>
+                                                            <b class='text-warning'>SANJU <b class="text-dark">SAINI</b>
+                                                            </b>
+                                                            <br>
+                                                            <i style="color: #afb42b;">Photographer</i>
+                                                            <p>
+                                                                "I am a passionate photographer who loves capturing
+                                                                beautiful moments. My name is sanju saini, and my
+                                                                photography tells a story akin to Sanju Saini. I capture
+                                                                the depth and hues of moments using natural light. For
+                                                                me, each photograph is a means of storytelling, and I
+                                                                strive to make that story come alive and emotive in
+                                                                every frame. My work embodies simplicity and nature,
+                                                                offering a profound experience with each photograph."
+                                                            </p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- </section> -->
+
+                            <script>
+
+                                var owl = $('.owl-carousel');
+                                owl.owlCarousel({
+                                    items: 1,
+                                    loop: true,
+                                    margin: 10,
+                                    autoplayTimeout: 1000,
+                                    autoplayHoverPause: true
+                                });
+                                $('.play').on('click', function () {
+                                    owl.trigger('play.owl.autoplay', [1000])
+                                })
+                                $('.stop').on('click', function () {
+                                    owl.trigger('stop.owl.autoplay')
+                                })
+
+                            </script>
+
+                            <!-- <section> -->
+                            <div class="container">
+                                <div data-aos="fade-up" data-aos-duration="1500">
+                                    <div class="row">
+                                        <div class="col-12 col-md-4 "></div>
+                                        <div class="col-12 col-md-8 mt-3">
+                                            <b> Latest Publications</b>
+                                            <hr class="border01">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- </section> -->
+
+                                <!-- <section> -->
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 col-md-4 "></div>
+                                        <div class="col-12 col-md-4 mt-3">
+                                            <div class="card w-100 h-100">
+                                                <div class="card ">
+                                                    <img src="  " alt="" width="100%" height="230px">
+                                                </div>
+                                                <div class="card p-4">
+                                                    <p>LIFESTYLE</p>
+                                                    <h5><b>I Am Fronend it developar</b></h2>
+                                                        <hr class="border01">
+                                                        <p>Exprience
+                                                            5 MONTH
+                                                        </p>
+                                                        <p>Bootstrap, JavaScript, React
+
+                                                        </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-4 mt-3">
+                                            <div class="card w-100 h-100">
+                                                <div class="card ">
+                                                    <img class="rahul"
+                                                        src="https://cdn.pixabay.com/photo/2015/03/29/08/45/entrepreneur-696959_960_720.jpg"
+                                                        alt="" class="img-fluid  " width="100%">
+                                                </div>
+                                                <div class="card p-4">
+                                                    <p>FREELANCING</p>
+                                                    <h5><b>Create your own beauty blog with Trueman</b></h2>
+                                                        <hr class="border01">
+                                                        <p>17 JULYS
+                                                            14:32
+                                                            EMMA T.
+                                                        </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- </section> -->
+
+                                        <!-- <section> -->
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4 "></div>
+                                                <div class="col-12 col-md-8 mt-3">
+                                                    <hr style="border: dotted 1px black;" class="border01">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- </section> -->
+
+                                    <!-- <section> -->
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 col-md-4 "></div>
+
+                                            <div class="col-12 col-md-8 mt-3 ">
+                                                <div class="card p-4">
+                                                    <div class="textcol row">
+                                                        <div class="col-12 col-md-6 text-dark"><small><b>© 2024 ALL
+                                                                    RIGHTS
+                                                                    RESERVED.</b></small></div>
+                                                        <div class="col-12 col-md-1 "> </div>
+                                                        <div class="col-12 col-md-5 text-dark"> <small><b>DEVELOPED BY:
+                                                                    <b class="text-info"><i>SANJU
+                                                                            SAINI</i></b></b></small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <!-- </section> -->
+
+    <!-- </main> -->
+
+
+</body>
+
+</html>
